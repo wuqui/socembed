@@ -1,7 +1,7 @@
 {
   "socembed": {
     "Overview": "/",
-    "Processing": "core.html",
+    "Processing": "processing.html",
     "Installation": "installation.html",
     "Reading the data": "read_data.html"
   }

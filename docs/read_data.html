@@ -42,6 +42,12 @@ nb_path: "02_read_data.ipynb"
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="get-file-paths">get file paths<a class="anchor-link" href="#get-file-paths"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -53,7 +59,7 @@ nb_path: "02_read_data.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_fpaths" class="doc_header"><code>get_fpaths</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/read_data.py#L9" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_fpaths</code>(<strong><code>LEX</code></strong>, <strong><code>CORPUS_DIR</code></strong>=<em><code>'/Volumes/qjd/promo/SocEmb/data/psaw/'</code></em>)</p>
+<h4 id="get_fpaths" class="doc_header"><code>get_fpaths</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/read_data.py#L10" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_fpaths</code>(<strong><code>LEX</code></strong>, <strong><code>CORPUS_DIR</code></strong>=<em><code>'/Volumes/qjd/promo/SocEmb/data/psaw/'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -73,6 +79,219 @@ nb_path: "02_read_data.ipynb"
 </div>
     {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fpaths</span> <span class="o">=</span> <span class="n">get_fpaths</span><span class="p">(</span><span class="s1">&#39;Anglo-Saxon&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="read-files">read files<a class="anchor-link" href="#read-files"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="read_files" class="doc_header"><code>read_files</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/read_data.py#L16" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>read_files</code>(<strong><code>fpaths</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">read_files</span><span class="p">(</span><span class="n">fpaths</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 138932 entries, 0 to 138931
+Data columns (total 4 columns):
+ #   Column       Non-Null Count   Dtype 
+---  ------       --------------   ----- 
+ 0   body         138928 non-null  object
+ 1   created_utc  138928 non-null  object
+ 2   id           138925 non-null  object
+ 3   subreddit    138925 non-null  object
+dtypes: object(4)
+memory usage: 4.2+ MB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="parse-dates">parse dates<a class="anchor-link" href="#parse-dates"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="parse_dates" class="doc_header"><code>parse_dates</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/read_data.py#L32" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>parse_dates</code>(<strong><code>df</code></strong>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">parse_dates</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Int64Index: 138925 entries, 117981 to 117982
+Data columns (total 4 columns):
+ #   Column       Non-Null Count   Dtype         
+---  ------       --------------   -----         
+ 0   body         138925 non-null  object        
+ 1   created_utc  138925 non-null  datetime64[ns]
+ 2   id           138925 non-null  object        
+ 3   subreddit    138925 non-null  object        
+dtypes: datetime64[ns](1), object(3)
+memory usage: 5.3+ MB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Export-notebooks">Export notebooks<a class="anchor-link" href="#Export-notebooks"> </a></h1>
+</div>
+</div>
+</div>
 </div>
  
 

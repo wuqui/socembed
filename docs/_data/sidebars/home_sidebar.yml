@@ -11,7 +11,7 @@ entries:
       url: /
     - output: web,pdf
       title: Processing
-      url: core.html
+      url: processing.html
     - output: web,pdf
       title: Installation
       url: installation.html
