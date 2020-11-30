@@ -4,9 +4,13 @@ __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
 index = {"get_fpaths": "02_read_data.ipynb",
          "read_files": "02_read_data.ipynb",
-         "parse_dates": "02_read_data.ipynb"}
+         "parse_dates": "02_read_data.ipynb",
+         "rm_bots_subreddits": "03_clean_data.ipynb",
+         "rm_dupl_comments": "03_clean_data.ipynb",
+         "rm_comm_no_toks": "03_clean_data.ipynb"}
 
-modules = ["read_data.py"]
+modules = ["read_data.py",
+           "clean_data.py"]
 
 doc_url = "https://wuqui.github.io/socembed/"
 

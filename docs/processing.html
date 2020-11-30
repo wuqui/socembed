@@ -49,29 +49,20 @@ nb_path: "00_processing.ipynb"
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-13-24b558e68cd2&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">from</span> socembed <span class="ansi-green-fg">import</span> <span class="ansi-blue-fg">*</span>
-
-<span class="ansi-green-fg">/Users/quirin/promo/socembed/socembed/__init__.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> __version__ <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">&#34;0.0.1&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> 
-<span class="ansi-green-fg">----&gt; 3</span><span class="ansi-red-fg"> </span><span class="ansi-green-fg">from</span> <span class="ansi-blue-fg">.</span>processing <span class="ansi-green-fg">import</span> <span class="ansi-blue-fg">*</span>
-<span class="ansi-green-intense-fg ansi-bold">      4</span> <span class="ansi-green-fg">from</span> <span class="ansi-blue-fg">.</span>read_data <span class="ansi-green-fg">import</span> <span class="ansi-blue-fg">*</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> 
-
-<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named &#39;socembed.processing&#39;</pre>
 </div>
-</div>
+    {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -104,7 +95,7 @@ nb_path: "00_processing.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Read-files">Read files<a class="anchor-link" href="#Read-files"> </a></h1>
+<h1 id="Read-data">Read data<a class="anchor-link" href="#Read-data"> </a></h1>
 </div>
 </div>
 </div>
@@ -119,25 +110,6 @@ nb_path: "00_processing.ipynb"
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-16-9c30d446adf4&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>fpaths <span class="ansi-blue-fg">=</span> get_fpaths<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#39;Anglo-Saxon&#39;</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;get_fpaths&#39; is not defined</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -158,25 +130,6 @@ nb_path: "00_processing.ipynb"
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-17-9a1b53c865ec&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>df <span class="ansi-blue-fg">=</span> read_files<span class="ansi-blue-fg">(</span>fpaths<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-red-fg">NameError</span>: name &#39;read_files&#39; is not defined</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     {% endraw %}
 
@@ -194,19 +147,257 @@ nb_path: "00_processing.ipynb"
 </div>
 </div>
 
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 <div class="output_wrapper">
 <div class="output">
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-18-d0cf69be9b6b&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>df <span class="ansi-blue-fg">=</span> parse_dates<span class="ansi-blue-fg">(</span>df<span class="ansi-blue-fg">)</span>
 
-<span class="ansi-red-fg">NameError</span>: name &#39;parse_dates&#39; is not defined</pre>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>body</th>
+      <th>created_utc</th>
+      <th>id</th>
+      <th>subreddit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>117981</th>
+      <td>What's interesting is that in other statistics...</td>
+      <td>2006-02-04 19:10:02</td>
+      <td>c19aw</td>
+      <td>reddit.com</td>
+    </tr>
+    <tr>
+      <th>117980</th>
+      <td>It's a pity that The Economist doesn't just le...</td>
+      <td>2006-03-31 20:19:59</td>
+      <td>c3rb4</td>
+      <td>reddit.com</td>
+    </tr>
+    <tr>
+      <th>117979</th>
+      <td>ROFL - pica, what prompted this little diatrib...</td>
+      <td>2006-04-05 19:35:05</td>
+      <td>c3ywe</td>
+      <td>reddit.com</td>
+    </tr>
+    <tr>
+      <th>117978</th>
+      <td>Agreed, and it points up the absurdity of the ...</td>
+      <td>2006-05-23 18:43:32</td>
+      <td>c6gks</td>
+      <td>reddit.com</td>
+    </tr>
+    <tr>
+      <th>117977</th>
+      <td>What if your groups don't make any sense?  Thi...</td>
+      <td>2006-05-23 23:26:17</td>
+      <td>c6h6i</td>
+      <td>reddit.com</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>117986</th>
+      <td>oh for sure, I just meant to say that anyone w...</td>
+      <td>2020-10-06 19:59:46</td>
+      <td>g7xj5pq</td>
+      <td>politics</td>
+    </tr>
+    <tr>
+      <th>117985</th>
+      <td>didn't howard write the shadow over innsmouth ...</td>
+      <td>2020-10-06 20:06:46</td>
+      <td>g7xk783</td>
+      <td>IcebergCharts</td>
+    </tr>
+    <tr>
+      <th>117984</th>
+      <td>Again, you're putting words in my mouth, and I...</td>
+      <td>2020-10-06 20:09:14</td>
+      <td>g7xkkch</td>
+      <td>victoria2</td>
+    </tr>
+    <tr>
+      <th>117983</th>
+      <td>Oh man, English is so bloody weird. Like, yes ...</td>
+      <td>2020-10-06 20:10:18</td>
+      <td>g7xkptp</td>
+      <td>TheOwlHouse</td>
+    </tr>
+    <tr>
+      <th>117982</th>
+      <td>The religion of Brittany could be a cult to ki...</td>
+      <td>2020-10-06 20:23:54</td>
+      <td>g7xmm1j</td>
+      <td>NewEraOldWorld</td>
+    </tr>
+  </tbody>
+</table>
+<p>138925 rows × 4 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Clean-data">Clean data<a class="anchor-link" href="#Clean-data"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Remove-bot-subreddits">Remove bot subreddits<a class="anchor-link" href="#Remove-bot-subreddits"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">rm_bots_subreddits</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>bot comments (abs): 0
+bot comments (rel): 0.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Remove-duplicate-comments">Remove duplicate comments<a class="anchor-link" href="#Remove-duplicate-comments"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">rm_dupl_comments</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>duplicates removed: 16812
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Remove-comments-without-target-tokens">Remove comments without target tokens<a class="anchor-link" href="#Remove-comments-without-target-tokens"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">rm_comm_no_toks</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">LEX</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                0       1
+0  total comments  122113
+1      w/o tokens    1635
+</pre>
 </div>
 </div>
 

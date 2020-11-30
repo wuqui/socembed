@@ -18,6 +18,9 @@ entries:
     - output: web,pdf
       title: Reading the data
       url: read_data.html
+    - output: web,pdf
+      title: Clean data
+      url: clean_data.html
     output: web
     title: socembed
   output: web
