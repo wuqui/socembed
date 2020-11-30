@@ -1,6 +1,6 @@
 ---
 
-title: Title
+title: Imports
 
 
 keywords: fastai
@@ -32,14 +32,55 @@ nb_path: "02_read_data.ipynb"
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Functions">Functions<a class="anchor-link" href="#Functions"> </a></h1>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="get_fpaths" class="doc_header"><code>get_fpaths</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/read_data.py#L9" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_fpaths</code>(<strong><code>LEX</code></strong>, <strong><code>CORPUS_DIR</code></strong>=<em><code>'/Volumes/qjd/promo/SocEmb/data/psaw/'</code></em>)</p>
+</blockquote>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_fpaths</span><span class="p">(</span><span class="n">LEX</span><span class="p">,</span> <span class="n">CORPUS_DIR</span><span class="o">=</span><span class="s1">&#39;/Volumes/qjd/promo/SocEmb/data/psaw/&#39;</span><span class="p">):</span>
-    <span class="n">lex_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">CORPUS_DIR</span><span class="si">}{</span><span class="n">LEX</span><span class="si">}</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="s2">&quot;/*.csv&quot;</span>
-    <span class="n">fpaths</span> <span class="o">=</span> <span class="n">glob</span><span class="p">(</span><span class="n">lex_path</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">fpaths</span>    
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">get_fpaths</span><span class="p">(</span><span class="s1">&#39;Anglo-Saxon&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="mi">2</span>
 </pre></div>
 
     </div>

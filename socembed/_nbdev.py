@@ -2,9 +2,9 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {}
+index = {"get_fpaths": "02_read_data.ipynb"}
 
-modules = []
+modules = ["read_data.py"]
 
 doc_url = "https://wuqui.github.io/socembed/"
 
