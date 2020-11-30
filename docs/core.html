@@ -62,38 +62,12 @@ nb_path: "00_core.ipynb"
 </div>
     {% endraw %}
 
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="say_hello" class="doc_header"><code>say_hello</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/core.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>say_hello</code>(<strong><code>to</code></strong>)</p>
-</blockquote>
-<p>Say servus to somebody</p>
-
-</div>
-
-</div>
-
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Imports">Imports<a class="anchor-link" href="#Imports"> </a></h1>
 </div>
 </div>
-
 </div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -101,40 +75,7 @@ nb_path: "00_core.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">say_hello</span><span class="p">(</span><span class="s1">&#39;Quirin&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;Servus Quirin!!&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="n">say_hello</span><span class="p">(</span><span class="s2">&quot;Quirin&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;Servus Quirin!!&quot;</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">glob</span> <span class="kn">import</span> <span class="n">glob</span>
 </pre></div>
 
     </div>
@@ -144,63 +85,12 @@ nb_path: "00_core.ipynb"
 </div>
     {% endraw %}
 
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h2 id="HelloSayer" class="doc_header"><code>class</code> <code>HelloSayer</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/core.py#L11" class="source_link" style="float:right">[source]</a></h2><blockquote><p><code>HelloSayer</code>(<strong><code>to</code></strong>)</p>
-</blockquote>
-<p>Say hello to <code>to</code> using <a href="/socembed/core.html#say_hello"><code>say_hello</code></a></p>
-
-</div>
-
-</div>
-
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Variables">Variables<a class="anchor-link" href="#Variables"> </a></h1>
 </div>
 </div>
-
 </div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-</div>
-    {% endraw %}
-
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="HelloSayer.say" class="doc_header"><code>HelloSayer.say</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/core.py#L15" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>HelloSayer.say</code>()</p>
-</blockquote>
-<p>Do the saying</p>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -208,33 +98,23 @@ nb_path: "00_core.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">o</span> <span class="o">=</span> <span class="n">HelloSayer</span><span class="p">(</span><span class="s2">&quot;Alexis&quot;</span><span class="p">)</span>
-<span class="n">o</span><span class="o">.</span><span class="n">say</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">LEX</span> <span class="o">=</span> <span class="s1">&#39;Anglo-Saxon&#39;</span>
+<span class="n">CORPUS_DIR</span> <span class="o">=</span> <span class="s1">&#39;/Volumes/qjd/promo/SocEmb/data/psaw/&#39;</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;Servus Alexis!!&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Read-files">Read files<a class="anchor-link" href="#Read-files"> </a></h1>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -242,7 +122,7 @@ nb_path: "00_core.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fpaths</span> <span class="o">=</span> <span class="n">get_fpaths</span><span class="p">(</span><span class="s1">&#39;Anglo-Saxon&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -259,7 +139,7 @@ nb_path: "00_core.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">get_fpaths</span><span class="p">(</span><span class="s1">&#39;Anglo-Saxon&#39;</span><span class="p">))</span> <span class="o">==</span> <span class="mi">2</span>
 </pre></div>
 
     </div>

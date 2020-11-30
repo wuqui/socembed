@@ -2,10 +2,9 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"say_hello": "00_core.ipynb",
-         "HelloSayer": "00_core.ipynb"}
+index = {}
 
-modules = ["core.py"]
+modules = []
 
 doc_url = "https://wuqui.github.io/socembed/"
 
