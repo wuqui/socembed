@@ -12,6 +12,9 @@ entries:
     - output: web,pdf
       title: Social embeddings of lexical innovation
       url: core.html
+    - output: web,pdf
+      title: Title
+      url: installation.html
     output: web
     title: socembed
   output: web

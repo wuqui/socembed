@@ -43,3 +43,35 @@ o.say()
     'Servus Würschinger!!'
 
 
+
+```python
+import numpy as np
+```
+
+
+    ---------------------------------------------------------------------------
+
+    ModuleNotFoundError                       Traceback (most recent call last)
+
+    <ipython-input-49-0aa0b027fcb6> in <module>()
+    ----> 1 import numpy as np
+    
+
+    ModuleNotFoundError: No module named 'numpy'
+
+
+```python
+import pandas as pd
+```
+
+
+    ---------------------------------------------------------------------------
+
+    ModuleNotFoundError                       Traceback (most recent call last)
+
+    <ipython-input-50-7dd3504c366f> in <module>()
+    ----> 1 import pandas as pd
+    
+
+    ModuleNotFoundError: No module named 'pandas'
+
