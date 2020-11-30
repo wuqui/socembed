@@ -21,6 +21,9 @@ entries:
     - output: web,pdf
       title: Clean data
       url: clean_data.html
+    - output: web,pdf
+      title: Usage intensity
+      url: usage_intensity.html
     output: web
     title: socembed
   output: web

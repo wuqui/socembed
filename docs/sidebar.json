@@ -4,6 +4,7 @@
     "Processing": "processing.html",
     "Installation": "installation.html",
     "Reading the data": "read_data.html",
-    "Clean data": "clean_data.html"
+    "Clean data": "clean_data.html",
+    "Usage intensity": "usage_intensity.html"
   }
 }

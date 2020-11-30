@@ -7,10 +7,13 @@ index = {"get_fpaths": "02_read_data.ipynb",
          "parse_dates": "02_read_data.ipynb",
          "rm_bots_subreddits": "03_clean_data.ipynb",
          "rm_dupl_comments": "03_clean_data.ipynb",
-         "rm_comm_no_toks": "03_clean_data.ipynb"}
+         "rm_comm_no_toks": "03_clean_data.ipynb",
+         "get_monthly_freq": "04_usage_intensity.ipynb",
+         "plot_use_freq": "04_usage_intensity.ipynb"}
 
 modules = ["read_data.py",
-           "clean_data.py"]
+           "clean_data.py",
+           "usage_intensity.py"]
 
 doc_url = "https://wuqui.github.io/socembed/"
 
