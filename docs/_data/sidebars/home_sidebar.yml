@@ -10,13 +10,13 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Social embeddings of lexical innovation
+      title: Processing
       url: core.html
     - output: web,pdf
-      title: Title
+      title: Installation
       url: installation.html
     - output: web,pdf
-      title: Imports
+      title: Reading the data
       url: read_data.html
     output: web
     title: socembed

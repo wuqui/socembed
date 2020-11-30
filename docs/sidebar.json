@@ -1,8 +1,8 @@
 {
   "socembed": {
     "Overview": "/",
-    "Social embeddings of lexical innovation": "core.html",
-    "Title": "installation.html",
-    "Imports": "read_data.html"
+    "Processing": "core.html",
+    "Installation": "installation.html",
+    "Reading the data": "read_data.html"
   }
 }
