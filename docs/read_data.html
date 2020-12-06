@@ -29,6 +29,12 @@ nb_path: "02_read_data.ipynb"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Imports">Imports<a class="anchor-link" href="#Imports"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -38,10 +44,11 @@ nb_path: "02_read_data.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Functions">Functions<a class="anchor-link" href="#Functions"> </a></h1>
+<h2 id="Google-Cloud-Storage-authentication"><code>Google Cloud Storage</code> authentication<a class="anchor-link" href="#Google-Cloud-Storage-authentication"> </a></h2>
 </div>
 </div>
-</div>
+</div>CREDS = f'{os.getcwd()}/google-drive-d2e64a7dbc90.json'
+%env GOOGLE_APPLICATION_CREDENTIALS=$CREDS
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Get-file-paths">Get file paths<a class="anchor-link" href="#Get-file-paths"> </a></h2>
@@ -59,7 +66,7 @@ nb_path: "02_read_data.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_fpaths" class="doc_header"><code>get_fpaths</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/read_data.py#L10" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_fpaths</code>(<strong><code>LEX</code></strong>, <strong><code>CORPUS_DIR</code></strong>=<em><code>'/Volumes/qjd/promo/SocEmb/data/psaw/'</code></em>)</p>
+<h4 id="get_fpaths" class="doc_header"><code>get_fpaths</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/read_data.py#L13" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_fpaths</code>(<strong><code>LEX</code></strong>, <strong><code>CORPUS_DIR</code></strong>=<em><code>'/Volumes/qjd/promo/SocEmb/data/psaw/'</code></em>, <strong><code>source</code></strong>=<em><code>'remote'</code></em>, <strong><code>bucket_name</code></strong>=<em><code>'socemb'</code></em>)</p>
 </blockquote>
 
 </div>
@@ -86,7 +93,7 @@ nb_path: "02_read_data.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fpaths</span> <span class="o">=</span> <span class="n">get_fpaths</span><span class="p">(</span><span class="s1">&#39;Anglo-Saxon&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fpaths</span> <span class="o">=</span> <span class="n">get_fpaths</span><span class="p">(</span><span class="s1">&#39;Anglo-Saxon&#39;</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="s1">&#39;local&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -113,7 +120,7 @@ nb_path: "02_read_data.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="read_files" class="doc_header"><code>read_files</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/read_data.py#L16" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>read_files</code>(<strong><code>fpaths</code></strong>)</p>
+<h4 id="read_comments" class="doc_header"><code>read_comments</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/read_data.py#L24" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>read_comments</code>(<strong><code>fpaths</code></strong>)</p>
 </blockquote>
 
 </div>
@@ -140,7 +147,7 @@ nb_path: "02_read_data.ipynb"
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">read_files</span><span class="p">(</span><span class="n">fpaths</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">read_comments</span><span class="p">(</span><span class="n">fpaths</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -208,7 +215,7 @@ memory usage: 4.2+ MB
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="parse_dates" class="doc_header"><code>parse_dates</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/read_data.py#L32" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>parse_dates</code>(<strong><code>df</code></strong>)</p>
+<h4 id="parse_dates" class="doc_header"><code>parse_dates</code><a href="https://github.com/wuqui/socembed/tree/master/socembed/read_data.py#L40" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>parse_dates</code>(<strong><code>df</code></strong>)</p>
 </blockquote>
 
 </div>
