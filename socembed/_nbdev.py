@@ -2,14 +2,14 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"get_fpaths": "02_read_data.ipynb",
-         "read_comments": "02_read_data.ipynb",
-         "parse_dates": "02_read_data.ipynb",
-         "rm_bots_subreddits": "03_clean_data.ipynb",
-         "rm_dupl_comments": "03_clean_data.ipynb",
-         "rm_comm_no_toks": "03_clean_data.ipynb",
-         "get_monthly_freq": "04_usage_intensity.ipynb",
-         "plot_use_freq": "04_usage_intensity.ipynb"}
+index = {"get_fpaths": "03_read_data.ipynb",
+         "read_comments": "03_read_data.ipynb",
+         "parse_dates": "03_read_data.ipynb",
+         "rm_bots_subreddits": "04_clean_data.ipynb",
+         "rm_dupl_comments": "04_clean_data.ipynb",
+         "rm_comm_no_toks": "04_clean_data.ipynb",
+         "get_monthly_freq": "05_usage_intensity.ipynb",
+         "plot_use_freq": "05_usage_intensity.ipynb"}
 
 modules = ["read_data.py",
            "clean_data.py",
